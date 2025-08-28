@@ -1,0 +1,38 @@
+//Lab-2(sum of elements)
+#include<stdio.h>
+int main()
+{
+    int a[20][20],i,j,r,c,sum;      //Name : Sudip Chakrabarty
+    printf("How many row and column want : ");              //Roll : 21053329
+    scanf("%d  %d",&r,&c);                          //Branch: CSE
+    printf("Give data : \n");
+    for (i = 0; i <r; i++)
+    {
+        for (j = 0; j < c; j++)
+        {
+            printf("Eneter the a[%d][%d]= ",i,j);
+            scanf("%d",&a[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("THis is the matrix : \n");
+    for (i = 0; i <r; i++)
+    {
+        for (j = 0; j < c; j++)
+        {
+            printf(" %d ",a[i][j]);
+        }
+        printf("\n");
+    }
+    for (i = 0; i <r; i++)
+    {
+        for (j = 0; j < c; j++)
+        {
+            sum=sum+a[i][j];
+        }
+    }
+    printf("Sum of all elements: %d",sum);    
+
+    return 0;
+}
